@@ -1,9 +1,9 @@
 import React,{Component} from 'react';
 import './App.css';
-import Greet from '.components/Greet'
-import Welcome from '.components/Welcome'
-import Hello from '.components/Hello'
-
+//import Greet from '.components/Greet'
+//import Welcome from '.components/Welcome'
+//import Hello from '.components/Hello'
+import Me from '.components/me'
 class App extends Component{
 
 render() {
@@ -12,9 +12,8 @@ render() {
       <header>
         <h1>Hello world</h1>
       </header>
-      <Greet/>
-      <Welcome/>
-      <Hello/>
+      
+      <Me/>
     </div>
   );
 }
