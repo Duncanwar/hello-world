@@ -1,19 +1,43 @@
 import React,{Component} from 'react';
 import './App.css';
-//import Greet from '.components/Greet'
-//import Welcome from '.components/Welcome'
-//import Hello from '.components/Hello'
-import Me from '.components/me'
+import Greet from './components/Greet'
+import Welcome from './components/Welcome'
+import Hello from './components/Hello'
+import Message from './components/Message'
+import Counter from './components/Counter'
+import TickingClock from './components/TickingClock'
+//import ColoredBlock from './components/ColoredBlock';
+//import ChangeColorButton from './components/ChangeColorButton'
+
 class App extends Component{
 
 render() {
   return (
     <div className="App">
-      <header>
+      {/* <header>
         <h1>Hello world</h1>
       </header>
+      <Greet name="Bruce" heroName="Super">
+        <p>This is a paragraph</p>
+      </Greet>
+      <Greet name="Milcah" heroName="Queen"></Greet>
+      <button>MemlalgmmlammlGMGLAMLSLL</button>
+      <Greet name="Duncan" heroName="Warrior"></Greet>
       
-      <Me/>
+      <Welcome name="Bruce" heroName="Super" ></Welcome>
+      <Welcome name="Bruce" heroName="Super" ></Welcome>
+      <Welcome name="Bruce" heroName="Super" ></Welcome>
+
+<Hello /> */}
+ <Greet name="Duncan" heroName="Warrior"></Greet>
+ <Welcome name="Bruce" heroName="Super" ></Welcome>
+
+<Greet/>
+<Message/>
+<Counter/>
+<TickingClock/>
+{/* <ColoredBlock/> */}
+
     </div>
   );
 }
