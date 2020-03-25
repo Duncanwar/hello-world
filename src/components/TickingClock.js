@@ -15,7 +15,7 @@ componentWillUnmount(){
     clearInterval(this.intervalID);
 }
 updateClock(){
-    console.log(this);
+  
     this.setState({
         time:new Date().toLocaleString()
     });

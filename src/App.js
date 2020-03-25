@@ -2,12 +2,12 @@ import React,{Component} from 'react';
 import './App.css';
 import Greet from './components/Greet'
 import Welcome from './components/Welcome'
-import Hello from './components/Hello'
+//import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
 import TickingClock from './components/TickingClock'
-import ColoredBlock from './components/ColoredBlock';
-import ChangeColorButton from './components/ChangeColorButton'
+import ColoredBlock from './components/ColoredBlock'
+
 
 class App extends Component{
 
@@ -36,8 +36,9 @@ render() {
 <Message/>
 <Counter/>
 <TickingClock/>
- <ColoredBlock/> 
+ <ColoredBlock /> 
 {/* <ChangeColorButton /> */}
+
     </div>
   );
 }
