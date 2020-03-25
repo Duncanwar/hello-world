@@ -6,8 +6,8 @@ import Hello from './components/Hello'
 import Message from './components/Message'
 import Counter from './components/Counter'
 import TickingClock from './components/TickingClock'
-//import ColoredBlock from './components/ColoredBlock';
-//import ChangeColorButton from './components/ChangeColorButton'
+import ColoredBlock from './components/ColoredBlock';
+import ChangeColorButton from './components/ChangeColorButton'
 
 class App extends Component{
 
@@ -36,8 +36,8 @@ render() {
 <Message/>
 <Counter/>
 <TickingClock/>
-{/* <ColoredBlock/> */}
-
+ <ColoredBlock/> 
+{/* <ChangeColorButton /> */}
     </div>
   );
 }
