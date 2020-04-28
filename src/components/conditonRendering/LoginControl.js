@@ -2,6 +2,8 @@ import React from 'react'
 import LogoutButton from './Logout'
 import LoginButton from './LoginButton'
 import Greeting from './Greeting'
+import MailBox from './MailBox'
+import Page from './Page'
 
 class LoginControl extends React.Component{
     constructor(props){
@@ -16,19 +18,24 @@ class LoginControl extends React.Component{
     handleLogoutClick(){
         this.setState({isLoggedIn:false});
     }
+   
     render(){
+        const messages = ['React', 'Re: React', 'Re:Re: React'];
         const isLoggedIn = this.state.isLoggedIn;
-        let button;
-        if(isLoggedIn){
-            button = <LogoutButton onClick={this.handleLoginClick}/>;
-        }
-        else{
-            button = <LoginButton onClick={this.handleLoginClick}/>;
-        }
-        return(
+        // let button;
+        // if(isLoggedIn){
+        //     button = <LogoutButton onClick={this.handleLoginClick}/>;  not used because of ternary expression
+        // }
+        // else{
+        //     button = <LoginButton onClick={this.handleLoginClick}/>;
+        // }
+         return(
 <div>
+        The user is <b>{isLoggedIn ? 'currently' : 'not'}</b> logged in.
     <Greeting isLoggedIn={isLoggedIn} />
-    {button}
+    {isLoggedIn ? <LogoutButton onClick={this.handleLogoutClick}/> : <LoginButton onClick={this.handleLoginClick}/>}
+    <MailBox unreadMessages={messages}/>
+    <Page />
 </div>
         );
     }
