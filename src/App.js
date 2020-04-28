@@ -7,7 +7,9 @@ import Message from './components/Message'
 import Counter from './components/Counter'
 import TickingClock from './components/TickingClock'
 import ColoredBlock from './components/ColoredBlock'
-
+import Greetings from './components/conditonRendering/Greeting'
+import LoginControl from './components/conditonRendering/LoginControl'
+import NameList from './components/NameList'
 
 class App extends Component{
 
@@ -29,16 +31,17 @@ render() {
       <Welcome name="Bruce" heroName="Super" ></Welcome>
 
 <Hello /> */}
- <Greet name="Duncan" heroName="Warrior"></Greet>
+ {/* <Greet name="Duncan" heroName="Warrior"></Greet>
  <Welcome name="Bruce" heroName="Super" ></Welcome>
 
 <Greet/>
 <Message/>
 <Counter/>
 <TickingClock/>
- <ColoredBlock /> 
+ <ColoredBlock />  */}
 {/* <ChangeColorButton /> */}
-
+<LoginControl/> {/* Element variable*/}
+{/* <NameList /> */}
     </div>
   );
 }
