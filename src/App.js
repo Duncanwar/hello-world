@@ -9,7 +9,7 @@ import TickingClock from './components/TickingClock'
 import ColoredBlock from './components/ColoredBlock'
 import Greetings from './components/conditonRendering/Greeting'
 import LoginControl from './components/conditonRendering/LoginControl'
-import NameList from './components/NameList'
+import NameList from './components/list-keys/NameList'
 
 class App extends Component{
 
@@ -41,7 +41,7 @@ render() {
  <ColoredBlock />  */}
 {/* <ChangeColorButton /> */}
 <LoginControl/> {/* Element variable*/}
-{/* <NameList /> */}
+<NameList />
     </div>
   );
 }
