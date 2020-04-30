@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Person from './Person'
 
 function NameList() {
@@ -19,7 +19,7 @@ function NameList() {
     },
 
 ]
-const personList=persons.map(person =><Person person={person} />)
+const personList=persons.map(person =><Person key={person.id} person={person} />)
         return (
             <div> {personList}   </div>
         );
