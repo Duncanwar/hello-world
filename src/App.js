@@ -10,7 +10,8 @@ import ColoredBlock from './components/ColoredBlock'
 import Greetings from './components/conditonRendering/Greeting'
 import LoginControl from './components/conditonRendering/LoginControl'
 import NameList from './components/list-keys/NameList'
-
+import NameForm from './components/forms/NameForm'
+import EssayForm from './components/forms/EssayForm';
 class App extends Component{
 
 render() {
@@ -42,6 +43,8 @@ render() {
 {/* <ChangeColorButton /> */}
 <LoginControl/> {/* Element variable*/}
 <NameList />
+<NameForm />
+<EssayForm />
     </div>
   );
 }
