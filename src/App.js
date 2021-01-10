@@ -8,7 +8,7 @@ render() {
 
   return (
     <div className="App">
-      Hello
+      <Hello/>
     </div>
   );
 }
